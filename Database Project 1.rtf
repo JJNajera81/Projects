@@ -1,0 +1,82 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 CREATE DATABASE Social_Media; CREATE TABLE Account(\
+    First_Name VARCHAR(25),\
+    Last_Name VARCHAR(25),\
+    Gender VARCHAR(1),\
+    Birthday DATE,\
+    Age INT(100),\
+    Phone_Number VARCHAR(12),\
+    GPA FLOAT(4.0)\
+); INSERT INTO Account\
+VALUES(\
+    "Jorge",\
+    "Najera",\
+    "M",\
+    "1992/29/05",\
+    22,\
+    "915-330-2781",\
+    3.3\
+),(\
+    "Mariana",\
+    "Ramos",\
+    "F",\
+    "1991/02/08",\
+    22,\
+    "915-330-2782",\
+    4.0\
+),(\
+    "Stephanie",\
+    "Hernandez",\
+    "F",\
+    "1994/09/24",\
+    22,\
+    "915-330-2785",\
+    3.8\
+),(\
+    "Jesus",\
+    "Najera",\
+    "M",\
+    "1991/30/05",\
+    24,\
+    "915-330-2786",\
+    3.0\
+),(\
+    "Danny",\
+    "Najera",\
+    "M",\
+    "1992/18/08",\
+    22,\
+    "915-330-2787",\
+    3.0\
+),(\
+    "Jovanna",\
+    "Ramos",\
+    "F",\
+    "1990/09/21",\
+    29,\
+    "915-330-2888",\
+    3.0\
+),(\
+    "Chris",\
+    "Castellano",\
+    "M",\
+    "1991/25/05",\
+    22,\
+    "915-330-2789",\
+    4.0\
+);\
+\
+\
+QUERIES\
+\
+SELECT First_Name, Last_Name FROM Account WHERE Gender = "F";\
+\
+SELECT First_Name, Last_Name FROM Account WHERE GPA = "3.0";\
+\
+SELECT First_Name FROM Account;}
